@@ -5,7 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="www\**" />
+    <Content Remove="www\**" />
+    <EmbeddedResource Remove="www\**" />
+    <None Remove="www\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="wwwroot\js\" />
   </ItemGroup>
 
 </Project>
