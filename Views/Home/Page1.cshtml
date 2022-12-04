@@ -1,5 +1,11 @@
-﻿@{
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Sayfa 1'e Hoşgeldiniz</h2>
+@section account {
+    <ul class="nav navbar-nav navbar-right">
+        <li><a asp-controller="Home" asp-action="LoginAsTeacher"> <span class="glyphicon glyphicon-log-in"></span>Login As Teacher</a></li>
+    </ul>
+}

@@ -18,5 +18,16 @@ namespace Asp.NetCoreLayout.Controllers
         {
             return View();
         }
+
+
+        public IActionResult LoginAsTeacher()
+        {
+            return View();
+        }
+
+        public IActionResult LoginAsStudent()
+        {
+            return View();
+        }
     }
 }

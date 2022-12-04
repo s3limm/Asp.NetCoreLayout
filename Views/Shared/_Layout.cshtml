@@ -18,10 +18,11 @@
             </div>
             <ul class="nav navbar-nav">
                 <li class="active"><a asp-controller="Home" asp-action="Home">Ana Sayfa</a></li>
-                <li><a asp-controller="Home" asp-action="Page1">Sayfa 1</a></li>
-                <li><a asp-controller="Home" asp-action="Page2">Sayfa 2</a></li>
+                <li><a asp-controller="Home" asp-action="Page1">Öğretmen</a></li>
+                <li><a asp-controller="Home" asp-action="Page2">Öğrenci</a></li>
             </ul>
-        </div>
+            @RenderSection("account",false);
+        </div>        
     </nav>
 
     <div class="container">
